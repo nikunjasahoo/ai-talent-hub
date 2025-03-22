@@ -1,0 +1,35 @@
+workflows:
+  recruitment_process:
+    name: "Full Recruitment Process"
+    description: "Complete recruitment workflow from job description to hire decision"
+    tasks:
+      - generate_job_description
+      - rank_resumes
+      - send_emails
+      - schedule_interviews
+      - conduct_interview
+      - make_hire_recommendation
+      - analyze_sentiment
+    
+  job_posting:
+    name: "Job Posting Process"
+    description: "Create job description and validate with human feedback"
+    tasks:
+      - generate_job_description
+    
+  candidate_selection:
+    name: "Candidate Selection Process"
+    description: "Rank resumes and notify selected candidates"
+    tasks:
+      - generate_job_description
+      - rank_resumes
+      - send_emails
+    
+  interview_process:
+    name: "Interview Process"
+    description: "Schedule and conduct interviews, then provide recommendations"
+    tasks:
+      - schedule_interviews
+      - conduct_interview
+      - make_hire_recommendation
+      - analyze_sentiment 

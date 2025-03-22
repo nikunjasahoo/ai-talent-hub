@@ -1,0 +1,46 @@
+John Smith
+Solution Architect
+Email: john.smith@example.com | Phone: (555) 123-4567 | Location: Atlanta, Georgia, USA
+
+Professional Summary
+
+Seasoned Solution Architect with 13 years of experience designing, developing, and deploying enterprise-grade solutions using Python and Java. Adept at translating business requirements into scalable, efficient architectures, leveraging extensive hands-on coding experience and leadership skills to guide cross-functional teams toward successful project delivery.
+
+Key Skills
+	•	Languages & Technologies: Python, Java, JavaScript, RESTful APIs, Microservices Architecture
+	•	Cloud & DevOps: AWS, Azure, Docker, Kubernetes, CI/CD pipelines
+	•	Databases: MySQL, PostgreSQL, MongoDB
+	•	Methodologies: Agile/Scrum, Test-Driven Development (TDD), Continuous Integration
+	•	Soft Skills: Team leadership, stakeholder communication, requirement gathering, problem-solving
+
+Professional Experience
+
+Lead Solution Architect | ABC Tech Solutions | 2018 – Present
+	•	Spearhead end-to-end architecture for large-scale enterprise applications, primarily leveraging Python and Java.
+	•	Collaborate with cross-functional teams (DevOps, QA, UI/UX) to optimize solution designs and drive continuous integration.
+	•	Mentor and train junior architects and developers on best practices, design patterns, and coding standards.
+	•	Implement microservices architecture to improve scalability and fault tolerance, reducing downtime by 30%.
+	•	Oversee technical documentation, ensuring clear communication of architectural decisions and system requirements.
+
+Senior Software Engineer / Architect | XYZ Innovations | 2013 – 2018
+	•	Engineered high-performance back-end services using Python and Java for diverse projects in healthcare, finance, and retail.
+	•	Analyzed complex business problems and devised system architectures that balanced performance, cost, and scalability.
+	•	Managed cloud migration initiatives, moving legacy systems to AWS, enhancing reliability and reducing operational costs by 25%.
+	•	Led Agile teams, fostering a collaborative environment that maintained consistent sprint velocity and on-time deliveries.
+
+Software Engineer | Global Tech Startups | 2010 – 2013
+	•	Contributed to full-stack development of web applications, utilizing Python and Java frameworks.
+	•	Worked closely with product managers to refine requirements, leading to efficient and on-point software solutions.
+	•	Optimized database queries and introduced performance monitoring tools, improving system responsiveness by 40%.
+
+Education
+
+Bachelor of Science in Computer Science
+Atlanta State University, Atlanta, USA (2010)
+
+Certifications & Achievements
+	•	AWS Certified Solutions Architect – Associate
+	•	Oracle Certified Professional, Java SE
+	•	Led multiple enterprise transformation initiatives recognized with internal awards for innovation and excellence
+
+References available upon request. 

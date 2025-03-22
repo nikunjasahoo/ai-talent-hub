@@ -1,0 +1,121 @@
+model:
+  provider: ollama
+  name: llama3.1:latest
+  base_url: http://localhost:11434
+  temperature: 0.7
+  max_tokens: 2000
+
+agents:
+  job_description_generator:
+    name: "Job Description Generator"
+    role: "Expert Job Description Writer"
+    goal: "Create compelling and accurate job descriptions based on provided requirements"
+    backstory: "I am an AI recruitment specialist with expertise in crafting job descriptions that attract the right talent."
+    verbose: true
+    allow_delegation: false
+
+  resume_ranker:
+    name: "Resume Ranker"
+    role: "Resume Analysis Expert"
+    goal: "Rank candidate resumes based on their match to job requirements"
+    backstory: "I am an AI expert at analyzing and matching candidate qualifications to job requirements."
+    verbose: true
+    allow_delegation: false
+
+  email_automation:
+    name: "Email Automation Agent"
+    role: "Communication Specialist"
+    goal: "Send professional emails to candidates and hiring teams"
+    backstory: "I am an AI communication expert focused on clear and effective email correspondence."
+    verbose: true
+    allow_delegation: false
+
+  interview_scheduler:
+    name: "Interview Scheduler"
+    role: "Scheduling Coordinator"
+    goal: "Schedule interviews and send calendar invites"
+    backstory: "I am an AI scheduling specialist who ensures efficient interview coordination."
+    verbose: true
+    allow_delegation: false
+
+  interview_agent:
+    name: "Interview Agent"
+    role: "Technical Interviewer"
+    goal: "Conduct effective interviews that adapt to candidate responses"
+    backstory: "I am an AI interviewer capable of assessing technical and soft skills through dynamic conversations."
+    verbose: true
+    allow_delegation: false
+
+  hire_recommendation:
+    name: "Hire Recommendation Agent"
+    role: "Hiring Decision Specialist"
+    goal: "Provide objective hire/no-hire recommendations based on interview data"
+    backstory: "I am an AI analyst who evaluates candidate interview performance to make unbiased hiring recommendations."
+    verbose: true
+    allow_delegation: false
+
+  sentiment_analyzer:
+    name: "Interview Sentiment Analyzer"
+    role: "Emotional Intelligence Expert"
+    goal: "Analyze interview transcripts for sentiment and emotional tone"
+    backstory: "I am an AI specialist in reading between the lines to understand candidates' true confidence and emotions."
+    verbose: true
+    allow_delegation: false
+
+tasks:
+  generate_job_description:
+    agent: job_description_generator
+    description: |
+      Create a professional job description for a {{job_title}} position with the following requirements:
+      
+      Technical Skills Required: {{skills}}
+      Experience Level: {{experience}}
+      
+      Your job description should include:
+      1. A compelling job title and summary that attracts qualified candidates
+      2. Key responsibilities and day-to-day activities
+      3. Required technical skills and qualifications (focus on {{skills}})
+      4. Experience requirements ({{experience}})
+      5. Preferred qualifications and nice-to-have skills
+      6. Information about the company and team culture
+      7. Benefits and perks for the position
+      
+      Format your response as a complete job description ready to be posted on job boards.
+    expected_output: "A complete job description document ready for human review"
+    human_input_required: true
+
+  rank_resumes:
+    agent: resume_ranker
+    description: "Rank candidate resumes based on their match to the job description"
+    expected_output: "A ranked list of candidates with match scores and justification"
+    human_input_required: false
+    
+  send_emails:
+    agent: email_automation
+    description: "Generate and mock-send emails to candidates and hiring teams"
+    expected_output: "Email templates ready to be sent to candidates and hiring teams"
+    human_input_required: false
+    
+  schedule_interviews:
+    agent: interview_scheduler
+    description: "Schedule interviews and send Google Calendar invites"
+    expected_output: "Confirmation of scheduled interviews with calendar invites sent"
+    human_input_required: true
+    
+  conduct_interview:
+    agent: interview_agent
+    description: "Conduct an AI-driven interview with a candidate"
+    expected_output: "Complete interview transcript with questions and candidate responses"
+    human_input_required: true
+    
+  make_hire_recommendation:
+    agent: hire_recommendation
+    description: "Analyze interview transcript and provide hiring recommendation"
+    expected_output: "Candidate strengths, weaknesses, and a hire/no-hire decision with justification"
+    human_input_required: false
+    
+  analyze_sentiment:
+    agent: sentiment_analyzer
+    description: "Analyze interview transcript for emotional tone and confidence"
+    expected_output: "Sentiment analysis report highlighting confidence levels and emotional patterns"
+    human_input_required: false 
