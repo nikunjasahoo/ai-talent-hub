@@ -14,6 +14,8 @@ A recruitment application built with Python and CrewAI, utilizing multiple agent
 
 ## Setup
 
+**Note:** Crew AI supports Python >=3.10 and <3.13 [Crewai Guide](https://docs.crewai.com/installation)
+
 1. Create a virtual environment and activate it
    ```
    python -m venv .venv
@@ -32,43 +34,7 @@ A recruitment application built with Python and CrewAI, utilizing multiple agent
 
 3. Run the application:
    ```
-   #Default Input
    python main.py
-
-   #With Input
-   python main.py --workflow job_posting --job-title "Python Developer" --skills "Python, Django, Flask, FastAPI" --experience "3+ years"
-   ```
-
-## Streamlit UI
-
-AI Talent Hub includes a user-friendly web interface built with Streamlit that provides:
-
-- Form-based job requirement input
-- Resume uploading and management
-- Workflow execution with real-time output
-- Downloadable resume files
-
-### Launching the Streamlit App
-
-1. Make sure you have activated your virtual environment:
-   ```
-   source .venv/bin/activate
-   
-   ```
-
-2. Launch the Streamlit interface:
-   ```
-   streamlit run app.py
-   ```
-
-3. The app will be available in your browser at:
-   - Local URL: http://localhost:8501
-   - Network URL: http://192.168.1.4:8501 (may vary based on your network)
-
-4. For better performance, install the Watchdog module:
-   ```
-   xcode-select --install  # Required on macOS
-   pip install watchdog
    ```
 
 ## Workflows
@@ -124,6 +90,35 @@ Command:
 ```
 python main.py --workflow interview_process --job-title "Python Developer" --skills "Python, Django, Flask" --experience "3+ years"
 ```
+
+
+## Streamlit UI
+
+AI Talent Hub includes a user-friendly web interface built with Streamlit that provides:
+
+- Form-based job requirement input
+- Resume uploading and management
+- Workflow execution with real-time output
+- Downloadable resume files
+
+### Launching the Streamlit App
+
+1. Make sure you have activated your virtual environment:
+   ```
+   source .venv/bin/activate
+   
+   ```
+
+2. Launch the Streamlit interface:
+   ```
+   streamlit run app.py
+   ```
+
+3. The app will be available in your browser at:
+   - Local URL: http://localhost:8501
+   - Network URL: http://192.168.1.4:8501 (may vary based on your network)
+
+
 
 ## Configuration
 
