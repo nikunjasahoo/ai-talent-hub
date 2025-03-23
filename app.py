@@ -12,7 +12,7 @@ st.set_page_config(
 )
 
 # Function to run the command based on selected workflow
-def run_workflow(workflow, email=None, job_title=None, skills=None, experience=None, positions=None):
+def run_workflow(workflow, email=None, job_title=None, skills=None, experience=None):
     cmd = ["python3", "main.py", "--workflow", workflow]
     
     if job_title:
@@ -26,9 +26,6 @@ def run_workflow(workflow, email=None, job_title=None, skills=None, experience=N
     
     if email:
         cmd.extend(["--email", email])
-    
-    if positions:
-        cmd.extend(["--positions", positions])
     
     st.info(f"Running command: {' '.join(cmd)}")
     
@@ -133,13 +130,9 @@ if 'deleted_resume' not in st.session_state:
 # Create two columns for the form
 col1, col2 = st.columns(2)
 
-# Recruiter section
+# Left section
 with col1:
-    #st.markdown("### Recruiter")
-    st.info(f"Recruiter Email: {email}")
-    
-    # Resume upload section
-    st.markdown("#### Upload Resume")
+    st.markdown("### Resume Store")
     uploaded_file = st.file_uploader("Upload a text resume", type=["txt"])
     
     if uploaded_file is not None:
@@ -156,9 +149,6 @@ with col1:
     if st.session_state.deleted_resume:
         st.success(f"Deleted: {st.session_state.deleted_resume}")
         st.session_state.deleted_resume = None
-    
-    # Resumes Store section
-    st.markdown("#### Resumes Store")
     
     # Check if the directory exists
     if os.path.exists("data/resumes"):
@@ -203,10 +193,11 @@ with col1:
 # Requirements section
 with col2:
     st.markdown("### Job Requirements")
+    st.info(f"Recruiter Email: {email}")
+    
     job_title = st.text_input("Job Title", key="job_title", placeholder="e.g., Python Developer")
     skills = st.text_input("Skills (comma-separated)", key="skills", placeholder="e.g., Python, Django, Flask, FastAPI")
     experience = st.text_input("Experience Level", key="experience", placeholder="e.g., 3+ years")
-    positions = st.number_input("Number of Open Positions", min_value=1, max_value=100, value=1, step=1, help="Enter the number of positions to be filled")
 
 # Workflow selection
 st.markdown("### Select Workflow")
@@ -220,28 +211,28 @@ with col1:
         if not job_title or not skills or not experience:
             st.warning("Please fill in all job requirement fields.")
         else:
-            run_workflow("recruitment_process", email, job_title, skills, experience, str(positions))
+            run_workflow("recruitment_process", email, job_title, skills, experience)
 
 with col2:
     if st.button("Job Posting", use_container_width=True):
         if not job_title or not skills or not experience:
             st.warning("Please fill in all job requirement fields.")
         else:
-            run_workflow("job_posting", email, job_title, skills, experience, str(positions))
+            run_workflow("job_posting", email, job_title, skills, experience)
 
 with col3:
     if st.button("Candidate Selection", use_container_width=True):
         if not job_title or not skills or not experience:
             st.warning("Please fill in all job requirement fields.")
         else:
-            run_workflow("candidate_selection", email, job_title, skills, experience, str(positions))
+            run_workflow("candidate_selection", email, job_title, skills, experience)
 
 with col4:
     if st.button("Interview Process", use_container_width=True):
         if not job_title or not skills or not experience:
             st.warning("Please fill in all job requirement fields.")
         else:
-            run_workflow("interview_process", email, job_title, skills, experience, str(positions))
+            run_workflow("interview_process", email, job_title, skills, experience)
 
 # Add information about the application
 st.markdown("---")
