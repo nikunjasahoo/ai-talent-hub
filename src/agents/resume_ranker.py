@@ -76,25 +76,25 @@ class ResumeRanker:
             job_description: Job description to match against
             
         Returns:
-            str: Ranked list of resumes with scores and justification
+            str: ranked list of resumes with scores and justification
         """
         # The tools are now embedded in the agent, so we let the agent handle the directory and file reading
         prompt = f"""
-        I need you to rank candidate resumes based on their match to this job description.
+        Rank candidate resumes based on their match to the generated job description.
         
-        First, use the DirectoryReadTool to list all resume files in the 'data/resumes' directory.
-        Then, use the FileReadTool to read the content of each resume file.
-        
-        JOB DESCRIPTION:
-        {job_description}
+        First, list all resume files and then, read the content of each resume file.
+        IMPORTANT: Only include candidates with a match score of 80 or higher in the final selection.
         
         For each resume, provide:
-        1. A match score from 0-100
-        2. Key strengths relative to the job description
-        3. Missing qualifications or weaknesses
-        4. Brief justification for the score
+        1. The candidate's name from the resume
+        2. A match score from 0-100
+        3. Key strengths relative to the job description
+        4. Missing qualifications or weaknesses
+        5. Brief justification for the score (1-2 sentences)
         
-        Then, provide a final ranked list from best match to worst match.
+        Then, Sort the candidates list from highest to lowest match score and 
+        provide a final ranked list from best match to worst match while
+        only including candidates with a score of 80 or higher.
         """
         
         return self.agent.execute_task(prompt) 
