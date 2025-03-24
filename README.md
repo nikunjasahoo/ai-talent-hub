@@ -5,9 +5,9 @@ A recruitment application built with Python and CrewAI, utilizing multiple agent
 ## Agents
 
 1. **Job Description Generator** - Creates tailored job descriptions based on job title, skills, and experience requirements
-2. **Resume Ranker** - Ranks candidate resumes based on job description match
+2. **Resume Ranker** - Ranks candidate resumes based on job description match (uses tools to list directory contents and read resumes)
 3. **Email Automation** - Sends emails to candidates and hiring teams
-4. **Interview Scheduler** - Schedules interviews via Google Calendar
+4. **Interview Scheduler** - Schedules interviews
 5. **Interview Agent** - Conducts AI-driven interviews with dynamic adaptation
 6. **Hire Recommendation** - Analyzes interview transcripts and makes hiring recommendations
 7. **Interview Sentiment Analyzer** - Performs sentiment analysis on interview transcripts
@@ -51,7 +51,7 @@ This workflow runs the complete end-to-end recruitment process including:
 
 Command:
 ```
-python main.py --workflow recruitment_process --job-title "Python Developer" --skills "Python, Django, Flask" --experience "3+ years" --email "recruiter@example.com" --positions "2"
+python main.py --workflow recruitment_process --job-title "Python Developer" --skills "Python, Django, Flask" --experience "3+ years"
 ```
 
 ### 2. Job Posting
@@ -116,7 +116,8 @@ AI Talent Hub includes a user-friendly web interface built with Streamlit that p
 
 3. The app will be available in your browser at:
    - Local URL: http://localhost:8501
-   - Network URL: http://192.168.1.4:8501 (may vary based on your network)
+   
+   ![alt text](<streamlit_app_ui.png>)
 
 
 
