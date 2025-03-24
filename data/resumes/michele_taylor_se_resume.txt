@@ -1,0 +1,38 @@
+Michele Taylor
+Software Associate
+Email: michele.taylor@test.com 
+
+Professional Summary
+
+Motivated Software Associate with 2 years of hands-on experience specializing in JavaScript development. Skilled in building dynamic, user-friendly web applications, collaborating with cross-functional teams, and consistently delivering optimized, efficient code. Eager to continue learning and expanding expertise in front-end technologies to create outstanding digital experiences.
+
+Key Skills
+	•	Programming Languages: JavaScript, HTML, CSS
+	•	Frameworks & Libraries: React, Node.js (Basics)
+	•	Tools & Technologies: Git, GitHub, VS Code, npm
+	•	Methodologies: Agile Scrum, Continuous Integration
+	•	Soft Skills: Collaboration, Communication, Problem-Solving
+
+Professional Experience
+
+Software Associate | ABC Infolabs | 2023 – Present
+	•	Develop and maintain user-facing features using JavaScript, HTML, and CSS for web applications.
+	•	Work closely with designers and back-end developers to implement seamless front-end functionality.
+	•	Participate in code reviews and contribute to continuous integration processes, ensuring code quality and maintainability.
+	•	Debug and resolve issues in existing features, improving application performance and user experience.
+
+Junior Front-End Developer (Intern) | XYZ Career Net | 2022 – 2023
+	•	Assisted in developing single-page applications using JavaScript frameworks under senior team guidance.
+	•	Gained exposure to version control (Git), basic RESTful API integration, and modern front-end build tools.
+	•	Collaborated with project managers and QA teams to ensure timely delivery of features while adhering to best practices.
+
+Education
+
+Bachelor of Science in Computer Science
+Michigan State University, Michigan, USA (2022)
+
+Achievements & Interests
+	•	Successfully completed a front-end web development bootcamp (2021).
+	•	Enthusiastic participant in hackathons, focusing on building interactive web interfaces.
+
+References available upon request.

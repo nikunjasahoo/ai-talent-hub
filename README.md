@@ -55,23 +55,31 @@ Command:
 python main.py --workflow recruitment_process --job-title "Junior Developer" --skills "Javascript, HTML, CSS" --experience "2 years"
 ```
  
- ![alt text](JD.png)
+**Job Description Generator** 
+ ![alt text](support_docs/JD.png)
+![alt text](support_docs/JD2.png)
 
-![alt text](JD2.png)
+**Resume Ranker**
+![alt text](support_docs/Resume_Ranker.png)
 
-![alt text](Email.png)
+**Email Automation**
+![alt text](support_docs/Email.png)
 
-![alt text](Schedule_Interview.png)
+![alt text](support_docs/Email2.png)
 
-![alt text](Schedule_interview2.png)
+**Interview Scheduler**
+![alt text](support_docs/Schedule_Interview.png)
+![alt text](support_docs/Schedule_interview2.png)
 
-![alt text](Interview.png)
+**Conduct Interview**
+![alt text](support_docs/Interview.png)
+![alt text](support_docs/Interview2.png)
 
-![alt text](Interview2.png)
+**Hire Recommendation**
+![alt text](support_docs/Hire_Recom.png)
 
-![alt text](Hire_Recom.png)
-
-![alt text](Sentiment.png)
+**Interview Sentiment Analyzer**
+![alt text](support_docs/Sentiment.png)
 
 ### 2. Job Posting
 

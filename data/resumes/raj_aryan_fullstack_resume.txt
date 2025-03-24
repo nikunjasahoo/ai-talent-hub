@@ -1,0 +1,46 @@
+RESUME: RAJ ARYAN
+
+Full Stack Developer (Java | Microservices | React Native) – 8 Years of Experience
+Email: raj.aryan@test.com | Phone: (555) 222-3333
+
+PROFESSIONAL OVERVIEW
+
+Driven Full Stack Developer with comprehensive experience in Java, Microservices, and React Native, contributing to cross-platform solutions for diverse industries. 
+Adept at designing scalable back-end architectures and creating user-friendly interfaces. 
+Briefly served as an Architect for a small-scale enterprise project, offering robust system designs and streamlined development processes. 
+Skilled at translating client requirements into efficient technical solutions, leading cross-functional teams, and adhering to Agile methodologies.
+
+KEY SKILLS
+	•	Programming & Frameworks: Java, Spring Boot, React Native, Node.js
+	•	Architecture & Microservices: REST APIs, Docker, Kubernetes (basic)
+	•	Databases: MySQL, PostgreSQL, MongoDB
+	•	DevOps & Tools: Jenkins, Git, Maven, JIRA
+	•	Other: Agile/Scrum, Team Collaboration, Technical Documentation
+
+PROFESSIONAL EXPERIENCE
+
+1. Full Stack Developer | ABC Tech Innovators
+(2019 – Present)
+	•	Develop end-to-end applications, leveraging Java (Spring Boot) on the back end and React Native for mobile interfaces.
+	•	Architected a small greenfield project, designing the microservices structure and establishing coding standards for the team.
+	•	Implement CI/CD pipelines using Jenkins and Docker, accelerating software delivery and deployment cycles.
+	•	Collaborate with UI/UX designers to create intuitive workflows, boosting user engagement by 30%.
+
+2. Software Engineer | XYZ Software Labs
+(2015 – 2019)
+	•	Focused on building scalable RESTful APIs and integrating them with React Native front ends.
+	•	Optimized data queries in MySQL and PostgreSQL, reducing response times by 25%.
+	•	Handled application debugging, performance tuning, and user acceptance testing to ensure high-quality releases.
+	•	Utilized Agile methodology to plan sprints, manage tasks, and maintain transparent communication with cross-functional teams.
+
+EDUCATION
+
+MSc IT
+Indian Institute of Advanced Studies, Banaras, India (2015)
+
+ACHIEVEMENTS & INTERESTS
+	•	Recognized with an “Outstanding Contributor” award at ABC Tech Innovators for enhancing mobile app performance.
+	•	Active participant in hackathons focusing on microservices integration and cloud-native solutions.
+	•	Enjoys mentoring junior developers, conducting code reviews, and promoting best practices in software architecture.
+
+References available upon request.

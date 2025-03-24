@@ -66,7 +66,7 @@ tasks:
   generate_job_description:
     agent: job_description_generator
     description: |
-      Create a professional job description for a {{job_title}} position with the following requirements:
+      Create a professional job description for a {{job_title}} position at XYZ Inc, situated at Cloud Avenue, CA. with the following requirements:
       
       Technical Skills Required: {{skills}}
       Experience Level: {{experience}}
@@ -92,8 +92,11 @@ tasks:
     
   send_emails:
     agent: email_automation
-    description: "Generate and mock-send emails to candidates and hiring teams"
-    expected_output: "Email templates ready to be sent to candidates and hiring teams"
+    description: |
+      Generate and mock-send emails to candidates and hiring teams. 
+      Address the candidate by name and include the job title and company name in the email body.
+      For the hiring team, provide a brief summary of the candidate's qualifications and a link to the resume.
+    expected_output: "Emails ready to be sent to candidates and hiring teams"
     human_input_required: false
     
   schedule_interviews:
@@ -104,7 +107,7 @@ tasks:
     
   conduct_interview:
     agent: interview_agent
-    description: "Conduct an AI-driven interview with a candidate"
+    description: "Conduct an AI-driven interview with a candidate who demonstrates strong expertise in {{skills}} and comes with {{experience}} years of practical experience"
     expected_output: "Complete interview transcript with questions and candidate responses"
     human_input_required: true
     
