@@ -1,11 +1,12 @@
 # AI Talent Hub
 
-A recruitment application built with Python and CrewAI, utilizing multiple agents powered by the Llama 3.1 model through Ollama.
+A recruitment application built with Python and CrewAI, utilizing multiple agents powered by a locally hosted Llama 3.1 model through Ollama.
+From parsing resumes to generating candidate outreach messages, all intelligent automation—such as ranking applications, interviewing, and providing candidate insights—relies on Llama 3.1’s advanced language capabilities. This local setup ensures data privacy while delivering a highly efficient and adaptive recruitment workflow.
 
 ## Agents
 
 1. **Job Description Generator** - Creates tailored job descriptions based on job title, skills, and experience requirements
-2. **Resume Ranker** - Ranks candidate resumes based on job description match (uses tools to list directory contents and read resumes)
+2. **Resume Ranker** - Ranks candidate resumes based on job description (uses tools to list directory contents and read resumes)
 3. **Email Automation** - Sends emails to candidates and hiring teams
 4. **Interview Scheduler** - Schedules interviews
 5. **Interview Agent** - Conducts AI-driven interviews with dynamic adaptation
