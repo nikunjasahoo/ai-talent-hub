@@ -51,8 +51,26 @@ This workflow runs the complete end-to-end recruitment process including:
 
 Command:
 ```
-python main.py --workflow recruitment_process --job-title "Python Developer" --skills "Python, Django, Flask" --experience "3+ years"
+python main.py --workflow recruitment_process --job-title "Junior Developer" --skills "Javascript, HTML, CSS" --experience "2 years"
 ```
+ 
+ ![alt text](JD.png)
+
+![alt text](JD2.png)
+
+![alt text](Email.png)
+
+![alt text](Schedule_Interview.png)
+
+![alt text](Schedule_interview2.png)
+
+![alt text](Interview.png)
+
+![alt text](Interview2.png)
+
+![alt text](Hire_Recom.png)
+
+![alt text](Sentiment.png)
 
 ### 2. Job Posting
 
